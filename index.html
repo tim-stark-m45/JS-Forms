@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        
+        <div class="collapsediv">
+            <button class="collapseBtn" data-close data-paragraph="#parag">Title <</button>
+            <p id="parag" style="display: block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia
+                possimus! Ab harum est dolores
+                quasi ratione repellat in, voluptatibus quae qui recusandae perspiciatis nam ea exercitationem? Ab, sapiente
+                voluptas.
+            </p>
+        </div>
+
+        <div class="modalWindow">
+
+            <button id="openBtn">Open modal</button>
+            
+            <div id="myModal" class="modal">
+            
+                <div class="modalContent">
+                    <span id="closeSpan" class="close">&times;</span>
+                    <p>Hi! I'm modal</p>
+                </div>
+            
+            </div>
+        </div>
+        <br>
+                
+        <div class="carouselContainer">
+    
+            <div class="Slide">
+                <img src="/Carousel Photos/Silvia_S15_GOCHA1.jpg">
+                <div class="text">Nissan Silvia S15</div>
+            </div>
+    
+            <div class="Slide">
+                <img src="/Carousel Photos/Screen-Shot-2017-03-23-at-2.31.27-PM-940x619.png">
+                <div class="text">Nissan Skyline R34</div>
+            </div>
+    
+            <div class="Slide">
+                <img src="/Carousel Photos/bmw-e30-m3-by-redux.jpg">
+                <div class="text">BMW E30</div>
+            </div>
+            
+            <a class="next" onclick="nextSlide(1)">&#10095;</a>
+            <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+            
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
